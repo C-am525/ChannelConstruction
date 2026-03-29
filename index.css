@@ -757,34 +757,68 @@ ul {
     padding: 64px 0;
   }
 
+  .site-header {
+    position: relative;
+  }
+
   .topbar,
   .footer-row {
     flex-direction: column;
     align-items: flex-start;
     padding: 18px 0;
+    gap: 16px;
   }
 
   .site-nav {
+    width: 100%;
     justify-content: flex-start;
     gap: 14px 18px;
   }
 
   .home-page .site-header {
-    background: rgba(251, 246, 241, 0.82);
+    position: absolute;
+    background: linear-gradient(180deg, rgba(251, 246, 241, 0.94) 0%, rgba(251, 246, 241, 0.74) 50%, rgba(251, 246, 241, 0.2) 100%);
   }
 
   .home-page .hero-home {
     min-height: 88vh;
-    padding-top: 132px;
+    padding-top: 210px;
   }
 
   .hero-copy-centered h1 {
     font-size: clamp(3.1rem, 11vw, 4.9rem);
+    line-height: 0.98;
   }
 
   .hero-subhead {
     white-space: normal;
     font-size: clamp(0.95rem, 4vw, 1.2rem);
+    letter-spacing: 0.08em;
+  }
+
+  .hero-copy-centered .lead {
+    max-width: 34rem;
+    font-size: 1.02rem;
+  }
+
+  .section-head h2,
+  .services-section .section-head h2,
+  .reviews-section .section-head h2 {
+    max-width: none;
+    white-space: normal;
+    font-size: clamp(2.4rem, 8vw, 3.6rem);
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .contact-form,
+  .contact-panel,
+  .info-card,
+  .review-card {
+    padding: 22px;
   }
 }
 
@@ -793,14 +827,24 @@ ul {
     --container: calc(100% - 28px);
   }
 
-  .call-link,
-  .button,
-  .button-secondary {
-    width: 100%;
+  .site-nav {
+    gap: 10px 12px;
+  }
+
+  .site-nav a:not(.call-link) {
+    font-size: 0.9rem;
+  }
+
+  .site-nav .call-link {
+    width: auto;
+    min-width: 0;
+    padding: 11px 16px;
+    font-size: 0.92rem;
   }
 
   .hero-actions {
     display: grid;
+    width: 100%;
   }
 
   .section-head h2 {
@@ -818,5 +862,32 @@ ul {
   .hero-copy-centered .button {
     min-width: 0;
     width: 100%;
+  }
+
+  .hero-copy-centered h1 {
+    font-size: clamp(2.8rem, 14vw, 4.1rem);
+  }
+
+  .hero-subhead {
+    margin-top: 16px;
+    font-size: 0.95rem;
+  }
+
+  .hero-copy-centered .lead {
+    margin-top: 22px;
+    max-width: 100%;
+    font-size: 0.98rem;
+    line-height: 1.6;
+  }
+
+  .portfolio-jump-list a {
+    min-height: 88px;
+    padding: 18px 16px;
+    font-size: 1.05rem;
+  }
+
+  .portfolio-meta span {
+    font-size: 0.74rem;
+    letter-spacing: 0.08em;
   }
 }
