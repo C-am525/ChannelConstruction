@@ -430,6 +430,11 @@ ul {
   max-width: none;
 }
 
+.review-title-intro,
+.review-title-brand {
+  display: block;
+}
+
 .nowrap {
   white-space: nowrap;
 }
@@ -860,8 +865,9 @@ ul {
     line-height: 1.08;
   }
 
-  .reviews-section .section-head h2 br {
-    display: none;
+  .review-title-intro,
+  .review-title-brand {
+    display: inline;
   }
 
   .services-section .container,
