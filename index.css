@@ -609,11 +609,6 @@ ul {
   box-shadow: 0 0 0 4px rgba(186, 115, 61, 0.12);
 }
 
-.form-note {
-  font-size: 0.94rem;
-  line-height: 1.6;
-}
-
 .portfolio-hero {
   padding-top: 56px;
   padding-bottom: 64px;
@@ -807,6 +802,11 @@ ul {
     max-width: none;
     white-space: normal;
     font-size: clamp(2.4rem, 8vw, 3.6rem);
+    line-height: 1.08;
+  }
+
+  .reviews-section .nowrap {
+    white-space: normal;
   }
 
   .reviews-grid {
@@ -851,6 +851,19 @@ ul {
     font-size: 2.4rem;
   }
 
+  .reviews-section .section-head {
+    margin-bottom: 28px;
+  }
+
+  .reviews-section .section-head h2 {
+    font-size: clamp(2rem, 10vw, 2.7rem);
+    line-height: 1.08;
+  }
+
+  .reviews-section .section-head h2 br {
+    display: none;
+  }
+
   .services-section .container,
   .reviews-section .container,
   .contact-section .container,
@@ -878,6 +891,20 @@ ul {
     max-width: 100%;
     font-size: 0.98rem;
     line-height: 1.6;
+  }
+
+  .review-card {
+    padding: 20px;
+  }
+
+  .review-card blockquote {
+    font-size: 1rem;
+    line-height: 1.58;
+  }
+
+  .reviewer {
+    margin-top: 16px;
+    font-size: 0.88rem;
   }
 
   .portfolio-jump-list a {
